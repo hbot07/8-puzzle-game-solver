@@ -20,4 +20,61 @@ The configuration of the following boards are:
 5, 2, 1, 7, 9, 0, 4, 8, 6, 12, 11, 15, 13, 10, 3, 14
 
 # Output:
+The program would print all the board states it checks. On finding the solution, the program would terminate printing two lines:
+Moves: "List of moves"
+Number of Moves: 
 
+The board can be solved by moving the blank space on board as instructed by the program output in moves.
+
+# Sample Input and Output:
+![image](https://user-images.githubusercontent.com/46916990/78764885-d1391d00-79a4-11ea-9c76-d0a783fa93a1.png)
+
+
+Enter board state    
+1,2,5,3,4,0,6,7,8   
+[1, 2, 5]   
+[3, 4, 0]   
+[6, 7, 8]   
+ 
+[1, 2, 0]   
+[3, 4, 5]   
+[6, 7, 8]   
+ 
+[1, 2, 5]   
+[3, 4, 8]   
+[6, 7, 0]   
+ 
+[1, 2, 5]   
+[3, 0, 4]   
+[6, 7, 8]   
+ 
+[1, 0, 2]    
+[3, 4, 5]    
+[6, 7, 8]    
+ 
+[1, 2, 5]    
+[3, 4, 8]      
+[6, 0, 7]   
+ 
+[1, 0, 5]   
+[3, 2, 4]    
+[6, 7, 8]    
+ 
+[1, 2, 5]    
+[3, 7, 4]     
+[6, 0, 8]    
+ 
+[1, 2, 5]    
+[0, 3, 4]   
+[6, 7, 8]    
+ 
+[1, 4, 2]    
+[3, 0, 5]    
+[6, 7, 8]    
+ 
+[0, 1, 2]    
+[3, 4, 5]    
+[6, 7, 8]     
+ 
+Moves: ['Up', 'Left', 'Left']   
+Number of Moves: 3
