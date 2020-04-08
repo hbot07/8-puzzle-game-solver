@@ -176,7 +176,7 @@ def bfs_search(initial_state):
     while (len(frontier) != 0):
         state = frontier.pop(0)
         explored.append(state.config)
-        print(state.display())
+        state.display()
         nodes_expanded += 1
         # print(nodes_expanded)
         if (test_goal(state)):
@@ -197,7 +197,7 @@ def test_goal(puzzle_state):
 # Main Function that reads in Input and Runs corresponding Algorithm
 
 def main():
-    begin_state = input("Enter board state").split(",")
+    begin_state = input("Enter board state \n").split(",")
     start_time = time.time()
 
     begin_state = tuple(map(int, begin_state))
