@@ -174,8 +174,8 @@ def bfs_search(initial_state):
     while (len(frontier) != 0):
         state = frontier.pop(0)
         explored.append(state.config)
-        #state.display()
-        print(" ")
+        # state.display()
+        # print(" ")
         nodes_expanded += 1
         # print(nodes_expanded)
         if (test_goal(state)):
