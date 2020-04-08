@@ -25,61 +25,14 @@ The configuration of the following boards are:
 5, 2, 1, 7, 9, 0, 4, 8, 6, 12, 11, 15, 13, 10, 3, 14
 
 ## Output:
-The program would print all the board states it checks. On finding the solution, the program would terminate printing two lines:
-Moves: "List of moves"
-Number of Moves: 
+The program would print the number of moves it checks for while processing. On finding the solution, the program would terminate printing The List of moves and the number of moves.
 
-The board can be solved by moving the blank space on board as instructed by the program output in moves.
+The board can be solved by moving the blank space on board as instructed by the program output in the List of moves.
 
 ## Sample Input and Output:
-![image](https://user-images.githubusercontent.com/46916990/78764885-d1391d00-79a4-11ea-9c76-d0a783fa93a1.png)
-
-
-Enter board state    
-1,2,5,3,4,0,6,7,8   
-[1, 2, 5]   
-[3, 4, 0]   
-[6, 7, 8]   
- 
-[1, 2, 0]   
-[3, 4, 5]   
-[6, 7, 8]   
- 
-[1, 2, 5]   
-[3, 4, 8]   
-[6, 7, 0]   
- 
-[1, 2, 5]   
-[3, 0, 4]   
-[6, 7, 8]   
- 
-[1, 0, 2]    
-[3, 4, 5]    
-[6, 7, 8]    
- 
-[1, 2, 5]    
-[3, 4, 8]      
-[6, 0, 7]   
- 
-[1, 0, 5]   
-[3, 2, 4]    
-[6, 7, 8]    
- 
-[1, 2, 5]    
-[3, 7, 4]     
-[6, 0, 8]    
- 
-[1, 2, 5]    
-[0, 3, 4]   
-[6, 7, 8]    
- 
-[1, 4, 2]    
-[3, 0, 5]    
-[6, 7, 8]    
- 
-[0, 1, 2]    
-[3, 4, 5]    
-[6, 7, 8]     
- 
-Moves: ['Up', 'Left', 'Left']   
-Number of Moves: 3
+#### Initial State:  
+![image](https://user-images.githubusercontent.com/46916990/78787611-3b16ee00-79c8-11ea-88f6-8a1f21f0579e.png)
+#### Finding solution:  
+![image](https://user-images.githubusercontent.com/46916990/78787881-a19c0c00-79c8-11ea-8fd6-0eec5a1a6536.png)
+#### After applying moves:  
+![image](https://user-images.githubusercontent.com/46916990/78788050-e2942080-79c8-11ea-9a7a-941872f9c3d3.png)
