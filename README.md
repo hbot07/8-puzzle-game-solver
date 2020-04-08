@@ -7,9 +7,11 @@ Given an initial state of the board, the combinatorial search problem is to find
 The blank space may be swapped with a component in one of the four directions {‘Up’, ‘Down’, ‘Left’, ‘Right’}, one move at a time. The cost of moving from one configuration of the board to another is the same and equal to one. Thus, the total cost of path is equal to the number of moves made from the initial state to the goal state.
 
 ## Input:
-The program required you to input the initial board configuration.
-Enter a string of integers separated by commas in row-wise manner from the board.
-For the empty space in the board, enter 0.
+
+The program requires you to input the initial board configuration.  
+Enter a string of integers separated by commas in row-wise manner from the board.  
+For the empty space in the board, enter 0.  
+
 ### Example:
 The configuration of the following boards are:
 
