@@ -6,7 +6,8 @@ Given an initial state of the board, the combinatorial search problem is to find
 
 The blank space may be swapped with a component in one of the four directions {‘Up’, ‘Down’, ‘Left’, ‘Right’}, one move at a time. The cost of moving from one configuration of the board to another is the same and equal to one. Thus, the total cost of path is equal to the number of moves made from the initial state to the goal state.
 
-#### Goal State: ![image](https://user-images.githubusercontent.com/46916990/78786845-06eefd80-79c7-11ea-9e9e-7eeba858ca37.png)
+#### Goal State:   
+![image](https://user-images.githubusercontent.com/46916990/78786845-06eefd80-79c7-11ea-9e9e-7eeba858ca37.png)
 
 ## Input:
 
