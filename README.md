@@ -10,9 +10,14 @@ The blank space may be swapped with a component in one of the four directions {â
 The program required you to input the initial board configuration.
 Enter a string of integers separated by commas in row-wise manner from the board.
 For the empty space in the board, enter 0.
-
 ### Example:
 The configuration of the following boards are:
+
+![image](https://user-images.githubusercontent.com/46916990/78760160-5c62e480-799e-11ea-8268-738f8c680555.png)
+5, 4, 8, 0, 2, 6, 7, 3, 1
+
+![image](https://user-images.githubusercontent.com/46916990/78762198-33901e80-79a1-11ea-993f-99a3986598dd.png)
+5, 2, 1, 7, 9, 0, 4, 8, 6, 12, 11, 15, 13, 10, 3, 14
 
 # Output:
 
