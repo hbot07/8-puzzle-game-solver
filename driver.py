@@ -174,8 +174,8 @@ def bfs_search(initial_state):
     while (len(frontier) != 0):
         state = frontier.pop(0)
         explored.append(state.config)
-        # state.display()
-        # print(" ")
+        #state.display()
+        #print(" ")
         nodes_expanded += 1
         # print(nodes_expanded)
         if (test_goal(state)):
@@ -193,7 +193,7 @@ def bfs_search(initial_state):
                 
 def test_goal(puzzle_state):
     """test the state is the goal state or not"""
-    return puzzle_state.config == tuple([0]).__add__(tuple(range(1, puzzle_state.n * puzzle_state.n)))
+    return puzzle_state.config == tuple(range(1, puzzle_state.n * puzzle_state.n)).__add__(tuple([0]))
 
 
 # Main Function that reads in Input and Runs corresponding Algorithm
