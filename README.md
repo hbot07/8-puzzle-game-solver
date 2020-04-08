@@ -1,5 +1,5 @@
 # 8-puzzle-game-solver
-You may visit mypuzzle.org/sliding for a refresher of the rules of the game.
+You may visit [mypuzzle.org/sliding](http://mypuzzle.org/sliding) for a refresher of the rules of the game.
 An instance of the N-puzzle game consists of a board holding N = m^2 − 1 (m = 3, 4, 5, ...) distinct movable tiles, plus an empty space. The tiles are numbers from the set {1, …, m^2 − 1}. For any such board, the empty space may be legally swapped with any tile horizontally or vertically adjacent to it.
 
 Given an initial state of the board, the combinatorial search problem is to find a sequence of moves that transitions this state to the goal state; that is, the configuration with all tiles arranged in ascending order ⟨0, 1, …, m^2 − 1⟩. The search space is the set of all possible states reachable from the initial state.
