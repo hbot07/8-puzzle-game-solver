@@ -12,7 +12,7 @@ The program requires you to input the initial board configuration.
 Enter a string of integers separated by commas in row-wise manner from the board.  
 For the empty space in the board, enter 0.  
 
-### Example:
+#### Example:
 The configuration of the following boards are:
 
 ![image](https://user-images.githubusercontent.com/46916990/78760160-5c62e480-799e-11ea-8268-738f8c680555.png)
@@ -21,14 +21,14 @@ The configuration of the following boards are:
 ![image](https://user-images.githubusercontent.com/46916990/78762198-33901e80-79a1-11ea-993f-99a3986598dd.png)
 5, 2, 1, 7, 9, 0, 4, 8, 6, 12, 11, 15, 13, 10, 3, 14
 
-# Output:
+## Output:
 The program would print all the board states it checks. On finding the solution, the program would terminate printing two lines:
 Moves: "List of moves"
 Number of Moves: 
 
 The board can be solved by moving the blank space on board as instructed by the program output in moves.
 
-# Sample Input and Output:
+## Sample Input and Output:
 ![image](https://user-images.githubusercontent.com/46916990/78764885-d1391d00-79a4-11ea-9c76-d0a783fa93a1.png)
 
 
