@@ -155,7 +155,6 @@ class PuzzleState(object):
         return self.children
 
 def writeOutput(goal, nodes_expanded, max_depth):
-    ### Student Code Goes here
     ans = []
     while (goal.parent is not None):
         ans.append(goal.action)
@@ -167,7 +166,6 @@ def writeOutput(goal, nodes_expanded, max_depth):
 
 def bfs_search(initial_state):
     """BFS search"""
-    ### STUDENT CODE GOES HERE ###
     frontier = [initial_state]
     nodes_expanded = -1
     frontier_configs = [initial_state.config]
