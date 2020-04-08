@@ -161,13 +161,8 @@ def writeOutput(goal, nodes_expanded, max_depth):
         ans.append(goal.action)
         goal = goal.parent
     end_time = time.time()
-    print("path_to_goal: " + str(list(reversed(ans))) + \
-            "\ncost_of_path: " + str(len(ans)) + \
-            "\nnodes_expanded: " + str(nodes_expanded) + \
-            "\nsearch_depth: " + str(len(ans)) + \
-            "\nmax_search_depth: " + str(max_depth) + \
-            "\nrunning_time: " + str(end_time - start_time) + \
-            "\nmax_ram_usage: " + str(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss))
+    print("Moves: " + str(list(reversed(ans))) + \
+            "\nNumber of Moves: " + str(len(ans)))
 
 
 def bfs_search(initial_state):
