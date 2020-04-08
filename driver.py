@@ -174,7 +174,7 @@ def bfs_search(initial_state):
     while (len(frontier) != 0):
         state = frontier.pop(0)
         explored.append(state.config)
-        state.display()
+        #state.display()
         print(" ")
         nodes_expanded += 1
         # print(nodes_expanded)
@@ -185,7 +185,10 @@ def bfs_search(initial_state):
             if not (neighbor.config in frontier_configs or neighbor.config in explored):
                 frontier.append(neighbor)
                 frontier_configs.append(neighbor.config)
-                max_depth = max(max_depth, neighbor.cost)
+                if(max_depth != max(max_depth, neighbor.cost)):
+                    max_depth = max(max_depth, neighbor.cost)
+                    print(max_depth)
+                
                 
                 
 def test_goal(puzzle_state):
