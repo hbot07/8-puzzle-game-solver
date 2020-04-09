@@ -25,7 +25,7 @@ The configuration of the following boards are:
 5, 2, 1, 7, 9, 0, 4, 8, 6, 12, 11, 15, 13, 10, 3, 14
 
 ## Output:
-The program would print the number of moves it checks for while processing. On finding the solution, the program would terminate printing The List of moves and the number of moves.
+The program would print the number of moves it checks for while processing. On finding the solution, the program would terminate by printing The List of moves and the number of moves to the solution.
 
 The board can be solved by moving the blank space on board as instructed by the program output in the List of moves.
 
