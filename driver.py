@@ -4,6 +4,8 @@ import sys
 
 import math
 
+import heapq
+
 import time
 
 start_time, end_time = 0.0, 0.0
