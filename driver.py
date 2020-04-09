@@ -11,7 +11,6 @@ import time
 start_time, end_time = 0.0, 0.0
 
 class PuzzleState(object):
-    """docstring for PuzzleState"""
 
     def __init__(self, config, n, parent=None, action="Initial", cost=0):
 
@@ -195,7 +194,6 @@ def A_star_search(initial_state):
 def calculate_total_cost(state):
     """calculate the total estimated cost of a state"""
 
-    ### STUDENT CODE GOES HERE ###
     sum = 0
     for i in range(0, len(state.config)):
         sum += calculate_manhattan_dist(i, state.config[i], math.sqrt(len(state.config)))
@@ -204,7 +202,7 @@ def calculate_total_cost(state):
 
 def calculate_manhattan_dist(idx, value, n):
     """calculate the manhattan distance of a tile"""
-    ### STUDENT CODE GOES HERE ###lo
+
     return math.fabs(value // n - idx // n) + math.fabs(value % n - idx % n)
                 
 def test_goal(puzzle_state):
