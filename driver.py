@@ -180,7 +180,7 @@ def A_star_search(initial_state):
         explored.add(state.config)
         # state.display()
         nodes_expanded += 1
-        print(nodes_expanded)
+        # print(nodes_expanded)
         if (test_goal(state)):
             writeOutput(state, nodes_expanded, max_depth)
             break
@@ -188,7 +188,9 @@ def A_star_search(initial_state):
             if not (neighbor.config in frontier_configs or neighbor.config in explored):
                 heapq.heappush(frontier, neighbor)
                 frontier_configs.add(neighbor.config)
-                max_depth = max(max_depth, neighbor.cost)
+                if max_depth != max(max_depth, neighbor.cost):
+                    max_depth = max(max_depth, neighbor.cost)
+                    print(max_depth)
 
 
 def calculate_total_cost(state):
