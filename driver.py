@@ -153,6 +153,9 @@ class PuzzleState(object):
                 self.children.append(right_child)
 
         return self.children
+    
+    def __lt__(self, other):
+        return calculate_total_cost(self) < calculate_total_cost(other)
 
 def writeOutput(goal, nodes_expanded, max_depth):
     ans = []
@@ -163,33 +166,44 @@ def writeOutput(goal, nodes_expanded, max_depth):
     print("Moves: " + str(list(reversed(ans))) + \
             "\nNumber of Moves: " + str(len(ans)))
 
-
-def bfs_search(initial_state):
-    """BFS search"""
+                
+def A_star_search(initial_state):
     frontier = [initial_state]
+    heapq.heapify(frontier)
     nodes_expanded = -1
-    frontier_configs = [initial_state.config]
-    explored = []
+    frontier_configs = set(initial_state.config)
+    explored = set()
     max_depth = 0
     while (len(frontier) != 0):
-        state = frontier.pop(0)
-        explored.append(state.config)
-        #state.display()
-        #print(" ")
+        state = heapq.heappop(frontier)
+        explored.add(state.config)
+        # state.display()
         nodes_expanded += 1
-        # print(nodes_expanded)
+        print(nodes_expanded)
         if (test_goal(state)):
             writeOutput(state, nodes_expanded, max_depth)
             break
-        for neighbor in state.expand():
+        for neighbor in reversed(state.expand()):
             if not (neighbor.config in frontier_configs or neighbor.config in explored):
-                frontier.append(neighbor)
-                frontier_configs.append(neighbor.config)
-                if(max_depth != max(max_depth, neighbor.cost)):
-                    max_depth = max(max_depth, neighbor.cost)
-                    print(max_depth)
-                
-                
+                heapq.heappush(frontier, neighbor)
+                frontier_configs.add(neighbor.config)
+                max_depth = max(max_depth, neighbor.cost)
+
+
+def calculate_total_cost(state):
+    """calculate the total estimated cost of a state"""
+
+    ### STUDENT CODE GOES HERE ###
+    sum = 0
+    for i in range(0, len(state.config)):
+        sum += calculate_manhattan_dist(i, state.config[i], math.sqrt(len(state.config)))
+    return sum + state.cost
+
+
+def calculate_manhattan_dist(idx, value, n):
+    """calculate the manhattan distance of a tile"""
+    ### STUDENT CODE GOES HERE ###lo
+    return math.fabs(value // n - idx // n) + math.fabs(value % n - idx % n)
                 
 def test_goal(puzzle_state):
     """test the state is the goal state or not"""
@@ -208,7 +222,7 @@ def main():
 
     hard_state = PuzzleState(begin_state, size)
     
-    bfs_search(hard_state)
+    A_star_search(hard_state)
 
 if __name__ == '__main__':
     main()
