@@ -36,3 +36,11 @@ The board can be solved by moving the blank space on board as instructed by the 
 ![image](https://user-images.githubusercontent.com/46916990/78787881-a19c0c00-79c8-11ea-8fd6-0eec5a1a6536.png)
 #### After applying moves:  
 ![image](https://user-images.githubusercontent.com/46916990/78788050-e2942080-79c8-11ea-9a7a-941872f9c3d3.png)
+
+## Algorithm: A* heuristic search  
+What is A* Search Algorithm? :[http://www.cs.cmu.edu/~cga/ai-course/astar.pdf](http://www.cs.cmu.edu/~cga/ai-course/astar.pdf)  
+heuristic function used= sum of Manhattan distance of each tile in current position to the goal state.  
+What is Manhattan Distance? :[https://xlinux.nist.gov/dads/HTML/manhattanDistance.html](https://xlinux.nist.gov/dads/HTML/manhattanDistance.html)
+Admissible: Yes
+Complete: Yes
+Optimal: Yes 
