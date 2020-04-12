@@ -39,8 +39,8 @@ The board can be solved by moving the blank space on board as instructed by the 
 
 ## Algorithm: A* heuristic search  
 What is A* Search Algorithm? :[http://www.cs.cmu.edu/~cga/ai-course/astar.pdf](http://www.cs.cmu.edu/~cga/ai-course/astar.pdf)  
-heuristic function used= sum of Manhattan distance of each tile in current position to the goal state.  
+Heuristic function used= sum of Manhattan distance of each tile in current position to the goal state.  
 What is Manhattan Distance? :[https://xlinux.nist.gov/dads/HTML/manhattanDistance.html](https://xlinux.nist.gov/dads/HTML/manhattanDistance.html)
-Admissible: Yes
-Complete: Yes
-Optimal: Yes 
+Admissible: Yes  
+Complete: Yes  
+Optimal: Yes   
